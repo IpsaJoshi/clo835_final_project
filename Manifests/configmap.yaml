@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+data:
+  background_image_url: "https://bg-images-grp14.s3.amazonaws.com/img1.jpeg"
+
