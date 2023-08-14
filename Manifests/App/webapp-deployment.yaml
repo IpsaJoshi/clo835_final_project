@@ -18,7 +18,7 @@ spec:
         version: v1
     spec:
       containers:
-      - image: 419810237977.dkr.ecr.us-east-1.amazonaws.com/webapp:v0.1
+      - image: 496056207117.dkr.ecr.us-east-1.amazonaws.com/grp14_webapp:v0.3
         name: webapp
         ports:
         - containerPort: 8080
@@ -31,7 +31,7 @@ spec:
         - name: DBUSER
           value: root
         - name: DBPWD
-          value: ipsa
+          value: GROUP14PWD
         resources:
           requests:
             cpu: 100m

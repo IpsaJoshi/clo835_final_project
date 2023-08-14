@@ -15,11 +15,11 @@ spec:
         app: mysql
     spec:
       containers:
-      - image: 419810237977.dkr.ecr.us-east-1.amazonaws.com/mysql:v0.1
+      - image: 496056207117.dkr.ecr.us-east-1.amazonaws.com/grp14_db:v0.3
         name: mysql
         env:
         - name: MYSQL_ROOT_PASSWORD
-          value: ipsa 
+          value: GROUP14PWD
         ports:
         - containerPort: 3306
           protocol: TCP
