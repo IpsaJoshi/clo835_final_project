@@ -3,6 +3,6 @@ kind: ConfigMap
 metadata:
   name: app-config
 data:
-  background_image_url: "http://44.211.65.175:81/download/img2.png"
+  background_image_url: "http://a2237cd8ded3d459d90aca03da429fe0-878665658.us-east-1.elb.amazonaws.com:81/download/img2.png"
   your_name: "Grp 14"
 
