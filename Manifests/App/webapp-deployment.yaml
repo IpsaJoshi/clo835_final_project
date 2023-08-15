@@ -32,6 +32,16 @@ spec:
           value: root
         - name: DBPWD
           value: GROUP14PWD
+        - name : DBNAME
+          valueFrom:
+            configMapKeyRef:
+              name: app-config
+              key: your_name
+        - name: DBIMG 
+          valueFrom:
+            configMapKeyRef:
+              name: app-config
+              key: background_image_url
         resources:
           requests:
             cpu: 100m
