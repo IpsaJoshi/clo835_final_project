@@ -16,6 +16,7 @@ spec:
     spec:
       containers:
       - image: 496056207117.dkr.ecr.us-east-1.amazonaws.com/grp14_db:v0.3
+        imagePullPolicy: Always
         name: mysql
         env:
         - name: MYSQL_ROOT_PASSWORD
@@ -37,7 +38,4 @@ spec:
       - name: data-volume
         persistentVolumeClaim:
           claimName: my-pvc    
-  restartPolicy: Always 
-            
-            
-      
+     
