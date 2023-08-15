@@ -4,4 +4,5 @@ metadata:
   name: app-config
 data:
   background_image_url: "https://bg-images-grp14.s3.amazonaws.com/img1.jpeg"
+  your_name: "Grp 14"
 
