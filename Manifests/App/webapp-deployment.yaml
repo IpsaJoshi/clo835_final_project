@@ -19,6 +19,7 @@ spec:
     spec:
       containers:
       - image: 496056207117.dkr.ecr.us-east-1.amazonaws.com/grp14_webapp:v0.3
+        imagePullPolicy: Always
         name: webapp
         ports:
         - containerPort: 8080
