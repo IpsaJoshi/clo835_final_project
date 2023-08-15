@@ -30,4 +30,14 @@ spec:
           requests:
             cpu: 100m
             memory: 100Mi
-      restartPolicy: Always
+        volumeMounts:           
+        - name: data-volume
+          mountPath: /var/lib/mysql  
+      volumes:               
+      - name: data-volume
+        persistentVolumeClaim:
+          claimName: my-pvc    
+  restartPolicy: Always 
+            
+            
+      
